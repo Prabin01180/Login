@@ -1,72 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:background="@drawable/light"
-    android:orientation="vertical"
-    tools:context="com.example.prabinpc.login.MainActivity">
+    android:layout_height="match_parent">
 
-
-    <ImageView
-        android:id="@+id/imageView3"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="16dp"
         android:layout_gravity="center"
-        android:contentDescription="Image_Admin"
-        android:padding="20dp"
-        app:srcCompat="@drawable/admin" />
+        android:background="@drawable/light"
+        android:orientation="vertical"
+        tools:context="com.example.prabinpc.login.MainActivity">
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/main_til_username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Username"
-        android:textColorHint="@color/icons">
-
-        <android.support.design.widget.TextInputEditText
+        <ImageView
+            android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/icons"
-            android:textSize="30sp" />
-    </android.support.design.widget.TextInputLayout>
+            android:layout_gravity="center"
+            android:contentDescription="Image_Admin"
+            android:padding="20dp"
+            app:srcCompat="@drawable/admin" />
 
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/main_til_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:textColorHint="@color/icons">
-
-        <android.support.design.widget.TextInputEditText
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/main_til_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/icons"
-            android:textSize="30sp"
+            android:hint="Username"
+            android:textColorHint="@color/icons">
 
-            />
-    </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/icons"
+                android:textSize="20dp" />
+        </android.support.design.widget.TextInputLayout>
 
-    <Button
-        android:id="@+id/btn_login"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="login"
-        android:textColor="@color/primary_dark"
-        android:textSize="25dp" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="register"
-        android:textColor="@color/primary_dark"
-        android:textSize="25dp" />
-</LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/main_til_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="@color/icons">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/icons"
+                android:textSize="20dp"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <Button
+                android:id="@+id/btn_login"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="login"
+                android:padding="10dp"
+                 />
+
+            <Button
+                android:id="@+id/btn_register"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="register"
+                android:padding="10dp"
+                 />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
