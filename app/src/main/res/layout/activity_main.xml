@@ -51,10 +51,9 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/icons"
                 android:textSize="20dp"
-
                 />
-        </android.support.design.widget.TextInputLayout>
 
+        </android.support.design.widget.TextInputLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
